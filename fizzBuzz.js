@@ -5,6 +5,7 @@ function fizzBuzz(num) {
         if (i % 3 === 0) {
             document.write('Fizz');
         }
+        
         if (i % 5 === 0) {
             document.write('Buzz');
         }
@@ -13,7 +14,7 @@ function fizzBuzz(num) {
             document.write(i);
         }
 
-        document.write('<br>')
+        document.write('<br>');
     }
 }
 
