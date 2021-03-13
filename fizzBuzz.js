@@ -1,21 +1,26 @@
-function fizzBuzz(num) {
-    num = Number(num);
+function fizzBuzz(i) {
+    i = Number(i);
 
-    for (i=0; i <= num; i++) {
-        if (i % 3 === 0) {
-            document.write('Fizz');
-        }
-        
-        if (i % 5 === 0) {
-            document.write('Buzz');
+    let word;
+
+    for (num=1; num <= i; num++) {
+        output = '';
+
+        if (num % 3 === 0 || num % 5 === 0) {
+            if (num % 3 === 0) {
+                output += 'Fizz';
+            } 
+            if (num % 5 === 0) {
+                output += 'Buzz';
+            }
+        } else {
+            output = num;
         }
 
-        if (!(i % 3 === 0 && i % 5 === 0)) {
-            document.write(i);
-        }
-
-        document.write('<br>');
+        console.log(output);
     }
 }
 
-fizzBuzz(100);
+let iters = Number(window.prompt('How many iterations?'))
+
+fizzBuzz(iters);
